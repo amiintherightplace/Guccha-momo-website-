@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO. Update these three lines if the restaurant's name or description changes. -->
+  <title>Guccha Mo:Mo | Jhol Momo and Skewers in Kathmandu</title>
+  <meta name="description" content="Guccha Mo:Mo serves jhol momo and skewers in Kathmandu. See the menu, browse photos, find directions and request a table on WhatsApp.">
+  <meta name="theme-color" content="#F2A71B">
+
+  <!-- Open Graph / social preview.
+       After deploying, change og:image to the full address, e.g. https://your-site.com/assets/img/og-image.jpg -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Guccha Mo:Mo | Jhol Momo and Skewers in Kathmandu">
+  <meta property="og:description" content="Momo, served by the bunch. See the menu, photos and directions, and request a table on WhatsApp.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta property="og:image:alt" content="A sunlit wooden table with bowls of momo and skewers served in foil dishes">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@400;500;600;700&display=swap">
+  <link rel="preload" as="image" href="assets/img/hero-bowl.webp" type="image/webp">
+  <link rel="stylesheet" href="style.css">
+
+  <script>document.documentElement.classList.replace("no-js", "js");</script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="site-header" id="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Guccha Mo:Mo, back to top">Guccha Mo<span class="colon" aria-hidden="true"></span>Mo</a>
+
+      <button class="nav__toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Open menu">
+        <svg class="icon icon--lg" aria-hidden="true" focusable="false"><use href="#i-menu"></use></svg>
+      </button>
+
+      <div class="nav__panel" id="nav-panel">
+        <nav aria-label="Main">
+          <ul class="nav__links">
+            <li><a href="#home" data-nav-link="home">Home</a></li>
+            <li><a href="#about" data-nav-link="about">About</a></li>
+            <li><a href="#menu" data-nav-link="menu">Menu</a></li>
+            <li><a href="#gallery" data-nav-link="gallery">Gallery</a></li>
+            <li><a href="#contact" data-nav-link="contact">Contact</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn--primary btn--sm" href="#reserve" data-nav-link="reserve">Reserve a Table</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home" data-nav="home" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="hero__script" lang="ne" data-text="nepaliName"></p>
+          <h1 id="hero-title">Momo, served by the bunch.</h1>
+          <p class="hero__lead">Steamed momo in warm golden jhol with red chilli on top, and skewers on the side. Pull up a wooden table and eat it while it's hot.</p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#menu">Explore Menu</a>
+            <a class="btn btn--ghost" href="#reserve">Reserve a Table</a>
+          </div>
+
+          <ul class="hero__facts" data-needs-js hidden>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"></use></svg><span data-text="hoursLine"></span></li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-star-line"></use></svg><span data-text="ratingLine"></span></li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"></use></svg><span data-text="addressShort"></span></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual">
+          <div class="foil-ring foil-ring--lg">
+            <img src="assets/img/hero-bowl.webp" width="800" height="800" fetchpriority="high"
+                 alt="A foil bowl of steamed momo in golden jhol, topped with red chilli, on a wooden table">
+          </div>
+          <div class="foil-ring foil-ring--sm">
+            <img src="assets/img/hero-skewers.webp" width="640" height="640"
+                 alt="Spiced skewers on a foil plate with golden sauce">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about" data-nav="about" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <div class="about__media">
+          <figure class="about__photo about__photo--main">
+            <img src="assets/img/table-spread-720.webp"
+                 srcset="assets/img/table-spread-480.webp 480w, assets/img/table-spread-720.webp 720w"
+                 sizes="(min-width: 880px) 520px, 92vw" width="719" height="532" loading="lazy"
+                 alt="A sunlit wooden table with skewers and bowls of momo served in foil dishes">
+          </figure>
+          <figure class="about__photo about__photo--inset">
+            <img src="assets/img/jhol-momo-480.webp"
+                 srcset="assets/img/jhol-momo-480.webp 480w, assets/img/jhol-momo-720.webp 720w"
+                 sizes="(min-width: 880px) 240px, 44vw" width="480" height="435" loading="lazy"
+                 alt="Momo in a foil bowl with golden jhol on a sunlit wooden table">
+          </figure>
+        </div>
+
+        <div class="about__copy">
+          <h2 id="about-title">Guccha means a bunch, so that's how the momo come.</h2>
+          <p>The idea is simple: a foil bowl of steamed momo, warm jhol poured over, a spoon of red chilli on top. Then something off a stick on the side.</p>
+          <p>There is nothing fancy about the setting, and that's the point. Wooden tables, foil bowls, plastic spoons, and food meant to be eaten while it's hot.</p>
+
+          <dl class="about__points">
+            <div>
+              <dt>Start with jhol momo</dt>
+              <dd>Steamed momo in a warm, golden jhol, finished with chilli.</dd>
+            </div>
+            <div>
+              <dt>Add something off the stick</dt>
+              <dd>Skewers in a golden masala or a glossy orange glaze.</dd>
+            </div>
+            <div>
+              <dt>Share the table</dt>
+              <dd>Order a few things and pass them around.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MENU ============ -->
+    <section class="section menu" id="menu" data-nav="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <header class="section__head">
+          <h2 id="menu-title">The menu</h2>
+          <p>Momo, skewers and a couple of things to share. Pick a category to filter the list.</p>
+        </header>
+
+        <div class="filters" id="menu-filters" role="group" aria-label="Menu categories" data-needs-js hidden></div>
+        <ul class="menu__list" id="menu-list"></ul>
+        <p class="menu__note" id="menu-note" data-needs-js hidden></p>
+
+        <noscript><p class="menu__note">The interactive menu needs JavaScript. Please turn it on, or ask the restaurant directly.</p></noscript>
+      </div>
+    </section>
+
+    <!-- ============ SIGNATURE DISHES ============ -->
+    <section class="section signature" id="signature" data-nav="menu" aria-labelledby="signature-title">
+      <div class="container">
+        <header class="section__head">
+          <h2 id="signature-title">From the bowl, off the stick</h2>
+          <p>Two plates that show what Guccha Mo:Mo is about.</p>
+        </header>
+
+        <article class="feature" data-reveal>
+          <figure class="feature__img">
+            <img src="assets/img/momo-and-fry-720.webp"
+                 srcset="assets/img/momo-and-fry-480.webp 480w, assets/img/momo-and-fry-720.webp 720w"
+                 sizes="(min-width: 880px) 480px, 92vw" width="719" height="1006" loading="lazy"
+                 alt="Foil bowls of momo in jhol with red chilli, and a bowl of crispy spiced fry, in low light">
+          </figure>
+          <div class="feature__body">
+            <h3>Jhol momo with red chilli on top</h3>
+            <p>A foil bowl of momo in warm jhol, with a spoon of red chilli piled on. Eat it with the plastic spoon, then drink what's left in the bowl.</p>
+            <a class="btn btn--amber" href="#menu" data-filter-link="momo">See momo on the menu</a>
+          </div>
+        </article>
+
+        <article class="feature feature--flip" data-reveal>
+          <figure class="feature__img">
+            <img src="assets/img/twister-skewer-720.webp"
+                 srcset="assets/img/twister-skewer-480.webp 480w, assets/img/twister-skewer-720.webp 720w"
+                 sizes="(min-width: 880px) 480px, 92vw" width="719" height="960" loading="lazy"
+                 alt="A hand lifting a spiral-cut skewer in orange glaze above a foil bowl of sauce">
+          </figure>
+          <div class="feature__body">
+            <h3>The spiral skewer</h3>
+            <p>One long, spiral-cut skewer with an orange glaze, lifted straight out of its sauce. Easy to eat standing up, even easier sitting down.</p>
+            <a class="btn btn--amber" href="#menu" data-filter-link="skewers">See skewers on the menu</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section gallery" id="gallery" data-nav="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <header class="section__head">
+          <h2 id="gallery-title">Gallery</h2>
+          <p>Tap a photo to see it larger.</p>
+        </header>
+
+        <ul class="gallery__grid" id="gallery-grid">
+          <li data-reveal>
+            <a href="assets/img/momo-and-fry-720.webp" data-lightbox>
+              <img src="assets/img/momo-and-fry-480.webp" width="480" height="672" loading="lazy"
+                   alt="Foil bowls of momo in jhol with red chilli, and a bowl of crispy spiced fry, in low light">
+            </a>
+          </li>
+          <li data-reveal>
+            <a href="assets/img/chilli-jhol-momo-720.webp" data-lightbox>
+              <img src="assets/img/chilli-jhol-momo-480.webp" width="480" height="265" loading="lazy"
+                   alt="Momo in golden jhol with a spoon of red chilli on top, seen from above">
+            </a>
+          </li>
+          <li data-reveal>
+            <a href="assets/img/twister-skewer-720.webp" data-lightbox>
+              <img src="assets/img/twister-skewer-480.webp" width="480" height="641" loading="lazy"
+                   alt="A hand lifting a spiral-cut skewer in orange glaze above a foil bowl of sauce">
+            </a>
+          </li>
+          <li data-reveal>
+            <a href="assets/img/table-spread-720.webp" data-lightbox>
+              <img src="assets/img/table-spread-480.webp" width="480" height="355" loading="lazy"
+                   alt="A sunlit wooden table with skewers and bowls of momo served in foil dishes">
+            </a>
+          </li>
+          <li data-reveal>
+            <a href="assets/img/masala-skewers-720.webp" data-lightbox>
+              <img src="assets/img/masala-skewers-480.webp" width="480" height="630" loading="lazy"
+                   alt="Skewers coated in golden masala on a foil plate in strong afternoon sun">
+            </a>
+          </li>
+          <li data-reveal>
+            <a href="assets/img/jhol-momo-720.webp" data-lightbox>
+              <img src="assets/img/jhol-momo-480.webp" width="480" height="435" loading="lazy"
+                   alt="Momo in a foil bowl with golden jhol on a sunlit wooden table">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ RESERVATION ============ -->
+    <section class="section reserve" id="reserve" data-nav="reserve" aria-labelledby="reserve-title">
+      <div class="container reserve__grid">
+        <div class="reserve__intro">
+          <h2 id="reserve-title">Request a table</h2>
+          <p>Fill in the form and WhatsApp opens with your details already typed out. Send the message and the restaurant replies to confirm.</p>
+
+          <ol class="steps">
+            <li>Fill in your details</li>
+            <li>Send the ready-made message on WhatsApp</li>
+            <li>Wait for the restaurant to confirm there</li>
+          </ol>
+
+          <p class="reserve__warn"><strong>This is a request, not a booking.</strong> Your table is only reserved once the restaurant confirms it on WhatsApp.</p>
+
+          <a class="btn btn--dark" data-href="whatsapp" href="#reserve" target="_blank" rel="noopener noreferrer" data-needs-js hidden>
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-whatsapp"></use></svg>
+            Message us on WhatsApp instead
+          </a>
+        </div>
+
+        <form class="form" id="reserve-form" novalidate aria-labelledby="reserve-title" data-needs-js hidden>
+          <p class="form__hint">All fields are required except special requests.</p>
+
+          <div class="field">
+            <label for="rf-name">Your name</label>
+            <input id="rf-name" name="name" type="text" autocomplete="name" maxlength="60" aria-describedby="rf-name-err">
+            <p class="field__error" id="rf-name-err" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="rf-phone">Phone number</label>
+            <input id="rf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="24" placeholder="98XXXXXXXX" aria-describedby="rf-phone-err">
+            <p class="field__error" id="rf-phone-err" aria-live="polite"></p>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="rf-date">Date</label>
+              <input id="rf-date" name="date" type="date" aria-describedby="rf-date-err">
+              <p class="field__error" id="rf-date-err" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="rf-time">Time</label>
+              <input id="rf-time" name="time" type="time" step="900" aria-describedby="rf-time-err">
+              <p class="field__error" id="rf-time-err" aria-live="polite"></p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="rf-guests">Number of guests</label>
+            <div class="stepper">
+              <button class="stepper__btn" type="button" data-step="-1" aria-label="Fewer guests">
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-minus"></use></svg>
+              </button>
+              <input id="rf-guests" name="guests" type="number" inputmode="numeric" min="1" max="12" value="2" aria-describedby="rf-guests-err">
+              <button class="stepper__btn" type="button" data-step="1" aria-label="More guests">
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plus"></use></svg>
+              </button>
+            </div>
+            <p class="field__error" id="rf-guests-err" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="rf-notes">Special requests <span class="optional">(optional)</span></label>
+            <textarea id="rf-notes" name="notes" rows="3" maxlength="300" placeholder="Seating, a birthday, anything we should know"></textarea>
+          </div>
+
+          <button class="btn btn--primary btn--block" type="submit">
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-whatsapp"></use></svg>
+            Send request on WhatsApp
+          </button>
+
+          <div class="result" id="reserve-result" tabindex="-1" hidden>
+            <h3>Your request is ready to send</h3>
+            <p id="reserve-result-text"></p>
+            <pre class="result__msg" id="reserve-msg"></pre>
+            <div class="result__actions">
+              <a class="btn btn--wa" id="reserve-open" href="#reserve" target="_blank" rel="noopener noreferrer">
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-whatsapp"></use></svg>
+                Open WhatsApp
+              </a>
+              <button class="btn btn--ghost" type="button" id="reserve-copy">
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-copy"></use></svg>
+                <span>Copy message</span>
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <noscript><p class="menu__note">Table requests need JavaScript. Please turn it on, or contact the restaurant directly.</p></noscript>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="section reviews" id="reviews" data-nav="" aria-labelledby="reviews-title">
+      <div class="container">
+        <header class="section__head">
+          <h2 id="reviews-title">What guests say</h2>
+        </header>
+
+        <div class="rating" id="rating" data-needs-js hidden>
+          <p class="rating__score" id="rating-score"></p>
+          <div class="rating__meta">
+            <span id="rating-stars"></span>
+            <p id="rating-count"></p>
+          </div>
+          <a class="btn btn--dark" data-href="reviews" href="#reviews" target="_blank" rel="noopener noreferrer">Read reviews on Google Maps</a>
+        </div>
+
+        <ul class="quotes" id="quotes"></ul>
+        <p class="quotes__note" id="quotes-note" hidden></p>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact" data-nav="contact" aria-labelledby="contact-title">
+      <div class="container contact__grid">
+        <div class="contact__info">
+          <h2 id="contact-title">Find us</h2>
+
+          <ul class="contact__list" data-needs-js hidden>
+            <li>
+              <svg class="icon icon--lg" aria-hidden="true" focusable="false"><use href="#i-pin"></use></svg>
+              <div><strong>Address</strong><address data-text="addressFull"></address></div>
+            </li>
+            <li>
+              <svg class="icon icon--lg" aria-hidden="true" focusable="false"><use href="#i-phone"></use></svg>
+              <div><strong>Phone</strong><a data-href="tel" data-text="phone" href="#contact"></a></div>
+            </li>
+            <li>
+              <svg class="icon icon--lg" aria-hidden="true" focusable="false"><use href="#i-whatsapp"></use></svg>
+              <div><strong>WhatsApp</strong><a data-href="whatsapp" href="#contact" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a></div>
+            </li>
+            <li data-optional>
+              <svg class="icon icon--lg" aria-hidden="true" focusable="false"><use href="#i-mail"></use></svg>
+              <div><strong>Email</strong><a data-href="mailto" data-text="email" href="#contact"></a></div>
+            </li>
+            <li>
+              <svg class="icon icon--lg" aria-hidden="true" focusable="false"><use href="#i-clock"></use></svg>
+              <div><strong>Hours</strong><span data-text="hoursLine"></span><small data-text="hoursNote"></small></div>
+            </li>
+          </ul>
+
+          <div class="contact__actions" data-needs-js hidden>
+            <a class="btn btn--primary" data-href="directions" href="#contact" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-navigate"></use></svg>
+              Get directions
+            </a>
+            <a class="btn btn--ghost" data-href="tel" href="#contact">
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-phone"></use></svg>
+              Call now
+            </a>
+          </div>
+
+          <ul class="social" data-social aria-label="Social media"></ul>
+        </div>
+
+        <div class="contact__map" id="map">
+          <noscript><p class="menu__note">The map needs JavaScript. Search for the restaurant on Google Maps instead.</p></noscript>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a class="brand brand--light" href="#home" aria-label="Guccha Mo:Mo, back to top">Guccha Mo<span class="colon" aria-hidden="true"></span>Mo</a>
+        <p data-text="tagline"></p>
+      </div>
+
+      <nav aria-label="Footer">
+        <p class="footer__h">Explore</p>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reserve">Reserve a table</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <p class="footer__h">Visit</p>
+        <address data-text="addressFull"></address>
+        <p><a data-href="tel" data-text="phone" href="#contact"></a></p>
+      </div>
+
+      <div>
+        <p class="footer__h">Hours</p>
+        <p data-text="hoursLine"></p>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>&copy; <span data-year>2026</span> <span data-text="name"></span>. All rights reserved.</p>
+      <ul class="social" data-social aria-label="Social media"></ul>
+    </div>
+  </footer>
+
+  <!-- ============ FLOATING BUTTONS ============ -->
+  <div class="fab-stack">
+    <a class="fab fab--top" id="back-to-top" href="#home" aria-label="Back to top">
+      <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-up"></use></svg>
+    </a>
+    <a class="fab fab--wa" data-href="whatsapp" href="#reserve" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" data-needs-js hidden>
+      <svg class="icon icon--xl" aria-hidden="true" focusable="false"><use href="#i-whatsapp"></use></svg>
+    </a>
+  </div>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+    <button class="lb__close" type="button" data-lb="close" aria-label="Close photo viewer">
+      <svg class="icon icon--lg" aria-hidden="true" focusable="false"><use href="#i-close"></use></svg>
+    </button>
+    <div class="lb__stage"><img id="lb-img" src="" alt=""></div>
+    <div class="lb__bar">
+      <button class="lb__nav" type="button" data-lb="prev" aria-label="Previous photo">
+        <svg class="icon icon--lg" aria-hidden="true" focusable="false"><use href="#i-chevron-left"></use></svg>
+      </button>
+      <p class="lb__caption" id="lb-caption" aria-live="polite"></p>
+      <button class="lb__nav" type="button" data-lb="next" aria-label="Next photo">
+        <svg class="icon icon--lg" aria-hidden="true" focusable="false"><use href="#i-chevron-right"></use></svg>
+      </button>
+    </div>
+  </dialog>
+
+  <!-- ============ ICON SPRITE ============ -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+    <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></symbol>
+    <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+    <symbol id="i-navigate" viewBox="0 0 24 24"><path d="M3 11l18-8-8 18-2-8z"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></symbol>
+    <symbol id="i-star-line" viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M7 10v4h3v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3V3h-3a5 5 0 0 0-5 5v2H7z"/></symbol>
+    <symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M21 7.9v4a9.9 9.9 0 0 1-5-2v4.5a6.5 6.5 0 1 1-8-6.3v4.3a2.5 2.5 0 1 0 4 2V3h4.1A6 6 0 0 0 21 7.9z"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.08-.12-.27-.2-.57-.35zM12.05 21.78h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.89 9.89-9.89 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.89-9.88 9.89zM20.46 3.49A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.17-3.48-8.42z"/></symbol>
+  </svg>
+
+  <script src="script.js"></script>
+</body>
+</html>
